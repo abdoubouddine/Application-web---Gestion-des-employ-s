@@ -1,0 +1,176 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+body
+{
+	font-family: lucida sans;
+}
+.sections
+{
+	padding: 50px 0;
+}
+.services
+{
+	margin: 90px auto;
+	text-align: center; 
+}
+
+.overlay
+{
+	position: static;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,.5);
+}
+header
+{
+	height: auto;
+	padding: 10px 0px 100px 0px;
+	margin: 10px 0px 100px 0px;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+}
+header i.icon
+{
+	position: absolute;
+	right: 30px;
+	top: 34px;
+	z-index: 10;
+	display: none;
+	color: red;
+}
+header .logo img
+{
+	width: 300px;
+	height: 70px ;
+	float: left; 
+ 	margin-top:10px;
+ 	margin-left: 0;
+}
+header nav ul
+{
+	list-style: none;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 0;
+}
+header nav ul .list a
+{
+	display: block;
+	padding: 15px 0;
+	margin: 9px 0;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	color: #fff;
+}
+header nav .nav-list .list a:hover
+{
+	color: #7cb62f;
+}
+header nav .nav-list .dropdown-menu  
+{
+	display: none;
+}
+header nav .nav-list li:hover > .dropdown-menu 
+{
+	display: block;
+	position: static;
+	background: black;
+	text-align: center;
+}
+@media (max-width: 575px)
+{
+	header nav .nav-list
+	{
+		display: none;
+		text-align: center;
+		padding: 0;
+	}
+	header .logo
+	{
+		text-align: center;
+	}
+	header i.icon
+	{
+		display: block;
+	}
+}
+
+/*Home Section*/
+
+.home
+{
+	height: 700px;
+	background-image: url(bg3.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.home .jumbotron 
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	max-height: 70%; 
+	background-color: red;
+	margin-top: 10px;
+	background: #808080;
+}
+.home .home-title
+{
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	color: red;
+	text-shadow: 1px 1px 2px yellow, 0 0 1em black, 0 0 0.2em black;
+	font-size: 90px;
+	margin-top: 5px;
+	font-weight: bolder;
+}
+.home h1:after
+{
+	content: '';
+	display: block;
+	width: 150px;
+	height: 3px;
+	margin: 10px auto; 
+}
+.home .my-4
+{
+	border: solid 2px;
+	border-radius: 5px;
+	color: black;
+}
+.home .row
+{
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+}
+.home ul 
+{
+	list-style-type: none;
+	font-size: 30px;
+	color: #8000ff;
+	text-decoration: underline;
+}
+@media (max-width: 575px)
+{
+	.home .home-title
+	{
+		font-size: 22px;
+	}
+}
+footer{
+  padding:20px;
+  color:#ffffff;
+  background-color:#623737;
+  text-align: center;
+  border-top:#FFC507 3px solid;
+}
+footer p
+{
+	font-size: 20px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="mise_en_forme.css">
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="plugin.js"></script>
+</head>
+<body>
+	<div class="my-progress-bar"></div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var progress_circle = $(".my-progress-bar").gmpc({ 
+					    // color
+					    color:"#000000",
+					    // height
+					    height:"300px",
+					    // width
+					    width:"300px",
+					    // line width
+					    line_width: 8,
+					    // stating value
+					    starting_position: 25,
+					    // max value
+					    percent: 100,
+					    // false = counterclockwise
+					    counter_clockwise:false,
+					    // show value
+					    percentage:true,
+					    // custom counter text
+					    text:''
+					}).gmpc('animate', 80, 3000);
+		})
+	</script>
+
+</body>
+</html>

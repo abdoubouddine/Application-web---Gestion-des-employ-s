@@ -1,0 +1,100 @@
+@font-face
+{ 
+  font-family:kiki;
+  src:url("fonts/kiki.ttf");
+}
+*
+{
+  margin: 0;
+  padding: 0;
+}
+.section
+{
+  background: url('bg.jpg');
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+  padding: 130px; 
+}
+.section h1
+{
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  color: white;
+  font-size: 40px;
+}
+.border
+{
+  display: block;
+  margin: auto;
+  width: 160px;
+  height: 3px;
+  margin-bottom: 40px; 
+}
+.ps
+{
+  margin-bottom: 40px;
+}
+.ps a
+{
+  display: inline-block;
+  margin: 0 30px;
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.ps a img
+{
+  width: 100%;
+  filter: grayscale(100%);
+  transition: 0.4s all;
+}
+.ps a:hover > img
+{
+  filter: none;
+}
+.info
+{
+  width: 600px;
+  margin: auto;
+  font-size: 20px;
+  color: white;
+  text-align: justify;
+  height: 0;
+  overflow: hidden;
+}
+.info:target
+{
+  height: auto;
+}
+.name
+{
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-family: kiki;
+}
+.section input[type="button"]
+{ 
+  margin-top:20px;
+    margin-bottom: 28px;
+    width: 120px;
+    height: 32px;
+    background: #623737;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: "roboto" sans serif;
+    font-size:10px;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    cursor: pointer;
+    
+}
+.section input[type="button"]:hover
+{
+    background: linear-gradient(to top right, #fdce77 0%, #cf3871 100%);
+transition: 0.2s ease;}

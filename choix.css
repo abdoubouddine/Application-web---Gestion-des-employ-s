@@ -1,0 +1,50 @@
+body
+{
+  background: url('bg.jpg') no-repeat;
+  background-size: cover;
+}
+
+ header .container-fluid
+{ 
+  width:1200px;
+  margin-bottom: 100px;
+}
+header .container-fluid h1
+{ 
+  font-family:Admirationpains;
+  color:yellow; 
+  font-size:85px;
+  text-align:center;
+}
+
+.cl1
+{
+  width:100%;
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font: "Arial Black";
+}
+.cl1 .container p
+{
+  float: none;
+  font-size: large;
+  font-weight: normal;
+  font-family: Arial , serif;
+  font-size: xx-large;
+  border-top: 6px solid red;
+  margin-bottom: 30px;
+  padding: 10px 0;
+}
+a
+{
+  padding: 30px;
+  margin: 30px;
+}
+.btn
+{
+  border-radius: 1rem;
+  font-size: 10rem;
+}
